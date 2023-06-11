@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: boot-client
+
+grpc:
+  client:
+    grpc-server:
+      address: 'static://localhost:8888'
+      negotiation-type: plaintext

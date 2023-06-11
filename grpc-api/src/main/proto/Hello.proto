@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = false;
+option java_package = "com.hugo";
+option java_outer_classname = "HelloProto";
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string result = 1;
+}
+
+message HelloRequest1 {
+  repeated string name = 1;
+}
+
+service HelloService {
+  rpc hello(HelloRequest) returns (HelloResponse){}
+  rpc hello2(HelloRequest1) returns (HelloResponse){}
+  rpc hello3(HelloRequest) returns (stream HelloResponse){}
+  rpc hello4(stream HelloRequest) returns (HelloResponse){}
+  rpc hello5(stream HelloRequest) returns (stream HelloResponse){}
+}

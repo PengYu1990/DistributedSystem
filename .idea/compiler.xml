@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="grpc-client" />
+        <module name="grpc-service" />
+        <module name="eureka" />
+        <module name="springboog-grpc-client" />
+        <module name="springboot-grpc-server" />
+        <module name="grpc-api" />
+        <module name="rmi" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka" target="17" />
+      <module name="examples" target="1.8" />
+      <module name="examples.main" target="1.8" />
+      <module name="examples.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka" options="-parameters" />
+      <module name="springboot-grpc-server" options="" />
+    </option>
+  </component>
+</project>

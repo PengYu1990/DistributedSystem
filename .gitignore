@@ -1,0 +1,6 @@
+# Project exclude paths
+/grpc-api/target/
+/grpc-client/target/
+/grpc-service/target/
+/springboog-grpc-client/target/
+/springboot-grpc-server/target/
